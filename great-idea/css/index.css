@@ -64,3 +64,152 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 800px;
+	margin: auto;
+}
+
+body {
+	font-size: 14px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+nav a {
+	color: #696969;
+	padding: 25px;
+	font-size: 12px;
+}
+
+ a:link {
+	text-decoration: none;
+}
+
+
+header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 500px;
+	/* margin-top: 50px; */
+	margin-bottom: 50px;
+}
+
+#innovation {
+	font-size: 72px;
+	text-align: center;
+	width: 60%;
+	height: 100%;
+	/* padding: 70px 50px 10px 50px; */
+	margin-left: 60px;
+}
+
+.business {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.button {
+	font-size: 16px;
+	border: 1px solid black;
+	padding: 5px 30px 5px 30px;
+	text-align: center;
+}
+
+.circle {
+	display: flex;
+	align-items: center;
+}
+
+
+.main {
+	border-top: 1px solid black;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+.container2{
+	display: flex;
+	justify-content: space-between;
+}
+
+.par1 {
+	width: 49%;
+	margin-top: 20px;
+}
+
+.par2 {
+	width: 49%;
+	margin-top: 20px;
+}
+
+.middle-img {
+	display: inline-block;
+	margin: 15px 0 30px 0;
+	max-width: 800px;
+	height: auto;
+}
+
+.main2 {
+	border-bottom: 1px solid black;
+}
+
+.container3 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.par3 {
+	 width: 32.3%;
+}
+
+.par4 {
+	width: 32.3%;
+}
+
+.par5 {
+	width: 32.3%;
+}
+
+.div3 {
+	margin-top: 20px;
+}
+
+ footer {
+	 margin-top: 30px;
+	 text-align: center;
+ }
+
+ /* Code for Great Idea - Services Page */
+
+ .container2 {
+	width: 800px;
+	margin: auto;
+ }
+
+ .header2 {
+	 display: flex;
+	 flex-direction: column;
+ }
+ .services-header-img {
+	 max-width: 800px;
+ }
+  .button2 {
+	  border: 1px solid black;
+	  border-radius: 3px;
+	  padding: 3px 15px 3px 15px;
+  }
+
+  .blocks {
+	  display: flex;
+	  flex-wrap: column-wrap;
+  }
