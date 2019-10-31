@@ -385,6 +385,26 @@ p {
 	.services-info-img {
 		display: none;
 	}
+	/* Product Media Query */
+	.product-header {
+		height: 25vh;
+	}
+
+	.products {
+		display: inline-block;
+	}
+
+	.products div {
+		width: 100%;
+	}
+
+	.moreProducts {
+		display: inline-block;
+	}
+
+	.moreProducts div {
+		width: 100%;
+	}
  }
 
  
