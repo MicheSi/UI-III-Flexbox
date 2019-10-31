@@ -86,10 +86,11 @@ nav a {
 	color: #696969;
 	padding: 25px;
 	font-size: 12px;
+	text-decoration: none;
 }
 
- a:link {
-	text-decoration: none;
+ a:hover {
+	color: steelblue;
 }
 
 
@@ -127,7 +128,10 @@ button {
 	text-align: center;
 }
 
-
+button:hover {
+	background: steelblue;
+	color: lightgray;
+}
 
 .main {
 	border-top: 1px solid black;
@@ -285,4 +289,58 @@ p {
  .moreProducts div {
 	 width: 33%;
 	 margin-top: 3%;
+ }
+
+ /* Index Media Queries */
+ @media (max-width: 500px) {
+	 .container {
+		 max-width: 450px;
+		 margin: 0 auto;
+	 }
+	 nav {
+		 flex-direction: column-reverse;
+		 justify-content: center;
+		 align-items: center;
+	 }
+
+	 nav a {
+		 padding: 15px;
+	 }
+
+	 .logo {
+		 margin-bottom: 6%;
+	 }
+
+	 header {
+		 flex-direction: column;
+		 justify-content: center;
+		 align-items: center;
+		 height: 60vh;
+	 }
+
+	 .circle {
+		 display: none;
+	 }
+
+	 .container2 {
+		 display: inline-block;
+		 width: 450px;
+		 margin: 0 auto;
+	 }
+
+	 .container2 div {
+		 width: 100%;
+	 }
+
+	 .container .middle-img {
+		 width: 100%;
+	 }
+
+	 .container3 {
+		 display: inline-block;
+	 }
+
+	 .container3 div {
+		 width: 100%;
+	 }
  }
