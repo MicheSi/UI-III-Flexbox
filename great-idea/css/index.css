@@ -215,6 +215,7 @@ p {
 	  border-radius: 3px;
 	  padding: 3px 20px 3px 20px;
 	  background-color: WhiteSmoke;
+	  text-decoration: none;
   }
 
   .servBlocks {
@@ -291,7 +292,7 @@ p {
 	 margin-top: 3%;
  }
 
- /* Index Media Queries */
+ /* Index Media Query */
  @media (max-width: 500px) {
 	 .container {
 		 max-width: 450px;
@@ -343,4 +344,47 @@ p {
 	 .container3 div {
 		 width: 100%;
 	 }
+	 /* Services Media Query */
+	 .services-header-img {
+		 width: 100%;
+	 }
+
+	 .header2 {
+		 margin-top: 4%;
+	 }
+
+	 .servBlocks {
+		 display: inline-block;
+	 }
+
+	 .serBlock {
+		 width: 100%;
+	 }
+
+	 .bottom {
+		 display: inline-block;
+		 margin-top: 20px;
+	 }
+
+	 .facts {
+		display: inline-block;
+		width: 100%;
+	}
+   
+	.facts p {
+	   margin-top: 0px;
+	}
+   
+	ul {
+		list-style-type: square;
+		margin-left: 18px;
+		margin-top: 0px;
+		line-height: 1.5;
+	}
+
+	.services-info-img {
+		display: none;
+	}
  }
+
+ 
