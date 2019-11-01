@@ -146,12 +146,7 @@ p {
 	justify-content: space-between;
 }
 
-.par1 {
-	width: 49%;
-	margin-top: 20px;
-}
-
-.par2 {
+.container2 div {
 	width: 49%;
 	margin-top: 20px;
 }
@@ -172,16 +167,8 @@ p {
 	justify-content: space-between;
 }
 
-.par3 {
+.container3 div {
 	 width: 32.3%;
-}
-
-.par4 {
-	width: 32.3%;
-}
-
-.par5 {
-	width: 32.3%;
 }
 
 .div3 {
