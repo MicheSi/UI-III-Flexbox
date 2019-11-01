@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+
 .container {
 	width: 800px;
 	margin: auto;
@@ -85,49 +86,52 @@ nav a {
 	color: #696969;
 	padding: 25px;
 	font-size: 12px;
+	text-decoration: none;
 }
 
- a:link {
-	text-decoration: none;
+ a:hover {
+	color: steelblue;
 }
 
 
 header {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
-	height: 500px;
-	/* margin-top: 50px; */
-	margin-bottom: 50px;
+	height: 75vh;
 }
 
-#innovation {
-	font-size: 72px;
-	text-align: center;
-	width: 60%;
-	height: 100%;
-	/* padding: 70px 50px 10px 50px; */
-	margin-left: 60px;
+header .business {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.business {
+.header-text {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-.button {
-	font-size: 16px;
-	border: 1px solid black;
-	padding: 5px 30px 5px 30px;
 	text-align: center;
 }
 
-.circle {
-	display: flex;
-	align-items: center;
+.header-text h1 {
+	font-size: 72px;
+	text-align: center;
 }
 
+button {
+	background: white;
+	font-size: 16px;
+	border: 1px solid black;
+	padding: 8px 20px 8px 20px;
+	width:175px;
+	text-align: center;
+}
+
+button:hover {
+	background: steelblue;
+	color: lightgray;
+}
 
 .main {
 	border-top: 1px solid black;
@@ -142,12 +146,7 @@ p {
 	justify-content: space-between;
 }
 
-.par1 {
-	width: 49%;
-	margin-top: 20px;
-}
-
-.par2 {
+.container2 div {
 	width: 49%;
 	margin-top: 20px;
 }
@@ -168,16 +167,8 @@ p {
 	justify-content: space-between;
 }
 
-.par3 {
+.container3 div {
 	 width: 32.3%;
-}
-
-.par4 {
-	width: 32.3%;
-}
-
-.par5 {
-	width: 32.3%;
 }
 
 .div3 {
@@ -196,20 +187,211 @@ p {
 	margin: auto;
  }
 
- .header2 {
-	 display: flex;
-	 flex-direction: column;
- }
  .services-header-img {
 	 max-width: 800px;
+	 margin-top: 30px;
+ }
+
+ .header2 {
+	 height: 20vh;
+	 border-bottom: 1px solid black;
  }
   .button2 {
+	  color: black;
 	  border: 1px solid black;
 	  border-radius: 3px;
-	  padding: 3px 15px 3px 15px;
+	  padding: 3px 20px 3px 20px;
+	  background-color: WhiteSmoke;
+	  text-decoration: none;
   }
 
-  .blocks {
+  .servBlocks {
 	  display: flex;
-	  flex-wrap: column-wrap;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	  margin-top: 3%;
+	  border-bottom: 2px solid black;
   }
+
+  .serBlock {
+	  width: 48%;
+	  padding: 20px 20px 25px 20px;
+	  border: 1px solid black;
+	  background-color: rgb(229, 223, 223);
+	  margin-bottom: 30px;
+  }
+
+  .serBlock p {
+	  margin-bottom: 30px;
+  }
+
+ .bottom {
+	 display: flex;
+	 justify-content: space-between;
+	 margin-top: 30px;
+ }
+  
+ .facts {
+	 display: flex;
+	 flex-wrap: wrap;
+	 width: 45%;
+ }
+
+ .facts p {
+	margin-top: -75px;
+ }
+
+ ul {
+	 list-style-type: square;
+	 margin-left: 18px;
+	 margin-top: -60px;
+	 line-height: 1.5;
+ }
+
+ footer {
+	 padding: 50px 0 40px 0;
+ }
+
+ /* Code for Product page */
+ .product-img, .design-img {
+	 width: 100%;
+	 margin-top: 3%;
+ }
+
+ .products {
+	 display: flex;
+	 justify-content: space-between;
+ }
+
+ .products div {
+	 width: 48%;
+	 margin-top: 3%;
+ }
+
+ .moreProducts {
+	 display: flex;
+	 justify-content: space-between;
+	 border-bottom: 1px solid black;
+ }
+
+ .moreProducts div {
+	 width: 33%;
+	 margin-top: 3%;
+ }
+
+ /* Index Media Query */
+ @media (max-width: 500px) {
+	 .container {
+		 max-width: 450px;
+		 margin: 0 auto;
+	 }
+	 nav {
+		 flex-direction: column-reverse;
+		 justify-content: center;
+		 align-items: center;
+	 }
+
+	 nav a {
+		 padding: 15px;
+	 }
+
+	 .logo {
+		 margin-bottom: 6%;
+	 }
+
+	 header {
+		 flex-direction: column;
+		 justify-content: center;
+		 align-items: center;
+		 height: 60vh;
+	 }
+
+	 .circle {
+		 display: none;
+	 }
+
+	 .container2 {
+		 display: inline-block;
+		 width: 450px;
+		 margin: 0 auto;
+	 }
+
+	 .container2 div {
+		 width: 100%;
+	 }
+
+	 .container .middle-img {
+		 width: 100%;
+	 }
+
+	 .container3 {
+		 display: inline-block;
+	 }
+
+	 .container3 div {
+		 width: 100%;
+	 }
+	 /* Services Media Query */
+	 .services-header-img {
+		 width: 100%;
+	 }
+
+	 .header2 {
+		 margin-top: 4%;
+	 }
+
+	 .servBlocks {
+		 display: inline-block;
+	 }
+
+	 .serBlock {
+		 width: 100%;
+	 }
+
+	 .bottom {
+		 display: inline-block;
+		 margin-top: 20px;
+	 }
+
+	 .facts {
+		display: inline-block;
+		width: 100%;
+	}
+   
+	.facts p {
+	   margin-top: 0px;
+	}
+   
+	ul {
+		list-style-type: square;
+		margin-left: 18px;
+		margin-top: 0px;
+		line-height: 1.5;
+	}
+
+	.services-info-img {
+		display: none;
+	}
+	/* Product Media Query */
+	.product-header {
+		height: 25vh;
+	}
+
+	.products {
+		display: inline-block;
+	}
+
+	.products div {
+		width: 100%;
+	}
+
+	.moreProducts {
+		display: inline-block;
+	}
+
+	.moreProducts div {
+		width: 100%;
+	}
+ }
+
+ 
